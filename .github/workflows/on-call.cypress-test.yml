@@ -13,9 +13,14 @@ on:
         type: string
 
 jobs:
+
   e2e:
     runs-on: ubuntu-latest
     timeout-minutes: 7
     steps:
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.inputs.git-ref != '' && github.event.inputs.git-ref || '' }}
+      - run: yarn run build
       - name: Run e2e test
         run: yarn test
