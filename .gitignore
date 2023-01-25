@@ -1,0 +1,17 @@
+node_modules
+test/.cache
+cypress/videos
+cypress/screenshots
+coverage
+.idea
+.vscode
+.npmrc
+.env_compose
+.terraform
+.cache
+yarn-error.log
+modules
+/dist
+.terraform
+.env
+.env.local
