@@ -1,7 +1,6 @@
 {
   "name": "swaglabs",
   "version": "1.0.0",
-  
   "main": "index.js",
   "scripts": {
     "test": "yarn cypress run --browser chrome",
@@ -10,7 +9,10 @@
   "author": "AgnieszkaSkubisze",
   "license": "ISC",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
     "cypress": "^12.4.0",
+    "eslint": "^8.32.0",
     "typescript": "^4.9.4"
   }
 }
