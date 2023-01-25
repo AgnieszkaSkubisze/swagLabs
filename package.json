@@ -5,7 +5,7 @@
   "scripts": {
     "test": "yarn cypress run --browser chrome",
     "browser:test": "yarn cypress open --browser chrome",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint --fix --ext .ts ."
   },
   "author": "AgnieszkaSkubisze",
   "license": "ISC",
