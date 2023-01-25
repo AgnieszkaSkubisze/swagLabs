@@ -37,4 +37,4 @@ Project is: _in progress_
 - Further testing coverage
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by [@AgnieszkaSkubiszewska](https://github.com/AgnieszkaSkubisze) - feel free to contact me!
