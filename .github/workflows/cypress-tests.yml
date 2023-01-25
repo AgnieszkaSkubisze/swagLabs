@@ -1,0 +1,23 @@
+name: Cypress Tests
+
+on: 
+  workflow_dispatch:
+    inputs:
+      git-ref:
+        required: false
+        description: if empty - last commit from selected branch will be used
+        default: ''
+      env:
+        description: 'Environment to run workflow'
+        required: true
+        default: 'prod'
+        type: choice
+        options:
+          - prod
+
+jobs:
+  cypress-run:
+      uses: ./.github/workflows/on-call.cypress-test.yml
+      with:
+        env: ${{ github.event.inputs.env }}
+        git-ref: ${{ github.event.inputs.git-ref }}
